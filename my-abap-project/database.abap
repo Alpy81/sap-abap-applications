@@ -29,10 +29,11 @@ INSERT INTO ZEMPLOYEE VALUES CORRESPONDING #(lt_data).
 * Daten aus der Tabelle abrufen
 SELECT * FROM ZEMPLOYEE INTO TABLE lt_data.
 
-* Ergebnisse in der Konsole ausgeben
+* Daten anzeigen
 LOOP AT lt_data INTO ls_employee.
   WRITE: / 'Employee ID:', ls_employee-EMPLOYEE_ID,
          / 'First Name:', ls_employee-FIRST_NAME,
          / 'Last Name:', ls_employee-LAST_NAME,
-         / 'Birthdate:', ls_employee-BIRTHDATE.
+         / 'Birthdate:', ls_employee-BIRTHDATE,
+         /.
 ENDLOOP.
