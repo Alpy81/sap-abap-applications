@@ -1,0 +1,13 @@
+DATA: lv_result TYPE string.
+CALL FUNCTION 'RFC_PING'
+  DESTINATION 'REMOTE_SYSTEM'
+  EXCEPTIONS
+    SYSTEM_FAILURE  = 1
+    COMMUNICATION_FAILURE = 2
+    OTHERS = 3.
+
+IF sy-subrc = 0.
+  WRITE: / 'RFC Ping successful'.
+ELSE.
+  WRITE: / 'RFC Ping failed'.
+ENDIF.
