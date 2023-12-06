@@ -47,18 +47,18 @@ APPEND lt_contactdata.
 * Aufruf der BAPI-Funktion zur Kundenanlage
 CALL FUNCTION 'BAPI_CUSTOMER_CREATEFROMDATA1'
   EXPORTING
-    customerdata      = lv_customer
-    companycode       = lv_companycode
-    salesarea          = lv_salesarea
+    customerdata = lv_customer
+    companycode = lv_companycode
+    salesarea = lv_salesarea
     partnerfunctions = lv_partnerfunctions
-    creditdata         = lv_creditdata
+    creditdata = lv_creditdata
   TABLES
-    addressdata       = lt_addressdata
-    bankdata            = lt_bankdata
-    contactperson    = lt_contactdata
-    extensionin        = lt_extensionin
-    extensionout     = lt_extensionout
-    return             = lt_return.
+    addressdata = lt_addressdata
+    bankdata = lt_bankdata
+    contactperson = lt_contactdata
+    extensionin = lt_extensionin
+    extensionout = lt_extensionout
+    return = lt_return.
 
 * Überprüfen der Rückgabetabelle lt_return auf etwaige Fehler
 LOOP AT lt_return INTO DATA(ls_return).
