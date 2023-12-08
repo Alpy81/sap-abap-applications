@@ -12,7 +12,7 @@ ENDDO.
 * Berechne die Summe der Zahlen
 lv_sum = REDUCE i( INIT result = 0 FOR wa IN lt_numbers NEXT result = result + wa ).
 
-* Berechne den Durchschnitt der Zahlen
+* Berechnung Durchschnitt der Zahlen
 lv_avg = lv_sum / lines( lt_numbers ).
 
 * Ausgabe der Ergebnisse
