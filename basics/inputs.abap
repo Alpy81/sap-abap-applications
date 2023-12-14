@@ -4,7 +4,7 @@ DATA: lt_numbers TYPE TABLE OF INT,
       lv_sum TYPE INT,
       lv_avg TYPE INT.
 
-* Fülle die interne Tabelle mit Zahlen
+* Eingabe der Zahlen in die interne Tabelle 
 DO 10 TIMES.
   APPEND sy-index TO lt_numbers.
 ENDDO.
