@@ -60,7 +60,7 @@ CALL FUNCTION 'BAPI_CUSTOMER_CREATEFROMDATA1'
     extensionout = lt_extensionout
     return = lt_return.
 
-* Überprüfen der Rückgabetabelle lt_return auf etwaige Fehler
+* Überprüfung der Rückgabetabelle lt_return auf etwaige Fehler
 LOOP AT lt_return INTO DATA(ls_return).
   IF ls_return-type = 'E' OR ls_return-type = 'A'.
     WRITE: / 'Error Message:', ls_return-message,
