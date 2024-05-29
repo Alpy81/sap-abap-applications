@@ -44,7 +44,7 @@ APPEND lt_contactdata.
 
 * Beispiel: Weitere Informationen können entsprechend den Anforderungen hinzugefügt werden.
 
-* Aufruf der BAPI-Funktion zur Kundenanlage
+* Aufrufen der BAPI-Funktion zur Kundenanlage
 CALL FUNCTION 'BAPI_CUSTOMER_CREATEFROMDATA1'
   EXPORTING
     customerdata = lv_customer
