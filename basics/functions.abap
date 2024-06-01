@@ -19,7 +19,7 @@ ENDCLASS.
 
 DATA(lo_object) = NEW lass( ).
 
-* Aufruf der Methode zur Berechnung der Fläche
+* Aufrufen der Methode zur Berechnung der Fläche
 DATA(lv_area) = lo_object->calculate_area( iv_radius = 5 ).
 
 * Ausgabe der berechneten Fläche
